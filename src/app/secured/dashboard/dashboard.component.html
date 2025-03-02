@@ -1,0 +1,99 @@
+<div class="flex h-screen">
+  <app-side-bar/>
+  <!-- Main Content -->
+  <div class="flex-1 p-8">
+      <router-outlet/>
+  </div>
+</div>
+<!--
+  <div class="flex justify-between items-center mb-6">
+          <h1 class="text-2xl font-bold">Gestion des Utilisateurs et Patients</h1>
+          <div class="relative">
+              <button class="bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600">
+                  <i class="fas fa-plus mr-2"></i>Ajouter
+              </button>
+              <div class="absolute right-0 mt-2 w-48 bg-white rounded-lg shadow-lg py-2 hidden">
+                  <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">
+                      <i class="fas fa-user-plus mr-2"></i>Ajouter Utilisateur
+                  </a>
+                  <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">
+                      <i class="fas fa-user-edit mr-2"></i>Éditer Utilisateur
+                  </a>
+                  <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">
+                      <i class="fas fa-user-minus mr-2"></i>Supprimer Utilisateur
+                  </a>
+                  <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">
+                      <i class="fas fa-procedures mr-2"></i>Ajouter Patient
+                  </a>
+                  <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">
+                      <i class="fas fa-edit mr-2"></i>Éditer Patient
+                  </a>
+                  <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">
+                      <i class="fas fa-trash mr-2"></i>Supprimer Patient
+                  </a>
+              </div>
+          </div>
+      </div>
+
+
+      <div class="bg-white rounded-lg shadow-md p-6 mb-6">
+        <h2 class="text-xl font-semibold mb-4">Liste des Utilisateurs</h2>
+        <table class="w-full text-left">
+            <thead>
+                <tr class="border-b">
+                    <th class="py-2">Nom</th>
+                    <th class="py-2">Email</th>
+                    <th class="py-2">Rôle</th>
+                    <th class="py-2">Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="border-b">
+                    <td class="py-2">Jean Dupont</td>
+                    <td class="py-2">jean.dupont&#64;xample.com</td>
+                    <td class="py-2">Admin</td>
+                    <td class="py-2">
+                        <button class="text-blue-500 hover:text-blue-700">
+                            <i class="fas fa-edit"></i>
+                        </button>
+                        <button class="text-red-500 hover:text-red-700 ml-2">
+                            <i class="fas fa-trash"></i>
+                        </button>
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+    </div>
+
+
+    <div class="bg-white rounded-lg shadow-md p-6">
+        <h2 class="text-xl font-semibold mb-4">Liste des Patients</h2>
+        <table class="w-full text-left">
+            <thead>
+                <tr class="border-b">
+                    <th class="py-2">Nom</th>
+                    <th class="py-2">Prénom</th>
+                    <th class="py-2">Date de Naissance</th>
+                    <th class="py-2">Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="border-b">
+                    <td class="py-2">Dupont</td>
+                    <td class="py-2">Marie</td>
+                    <td class="py-2">01/01/1990</td>
+                    <td class="py-2">
+                        <button class="text-blue-500 hover:text-blue-700">
+                            <i class="fas fa-edit"></i>
+                        </button>
+                        <button class="text-red-500 hover:text-red-700 ml-2">
+                            <i class="fas fa-trash"></i>
+                        </button>
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+    </div>
+-->

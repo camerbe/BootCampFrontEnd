@@ -1,0 +1,61 @@
+<!-- Popup de connexion (initialement caché)
+<div id="login-popup" class="fixed inset-0 bg-black-500 bg-opacity-50 z-50 hidden items-center justify-center">
+  <app-modal-login></app-modal-login>
+</div>-->
+
+
+<header class="bg-white shadow-md">
+  <div class="container mx-auto px-4 py-4">
+      <div class="flex justify-between items-center">
+          <div class="flex items-center">
+              <div class="text-red-800 font-bold text-2xl">Institut Médical</div>
+          </div>
+
+          <nav class="hidden md:flex space-x-8">
+              <a [routerLink]="['accueil']"  class="text-red-800 hover:text-red-600 font-medium">Accueil</a>
+              <a href="#specialites" class="text-red-800 hover:text-red-600 font-medium">Spécialités</a>
+              <a href="#" class="text-red-800 hover:text-red-600 font-medium">Médecins</a>
+              <a href="#" class="text-red-800 hover:text-red-600 font-medium">Contact</a>
+          </nav>
+
+          <div class="flex items-center space-x-4">
+              <a [routerLink]="['login']" class="text-red-700 hover:text-red-900">
+              <!--<a href="#login-popup" class="text-red-700 hover:text-red-900">-->
+                  <i class="fas fa-user mr-2"></i>Connexion
+              </a>
+
+              <a href="#" class="bg-red-700 text-white px-4 py-2 rounded-lg hover:bg-red-800 transition">
+                  Prendre rendez-vous
+              </a>
+          </div>
+
+          <div class="md:hidden">
+              <button class="text-red-800">
+                  <i class="fas fa-bars text-2xl"></i>
+              </button>
+          </div>
+      </div>
+  </div>
+</header>
+<!-- Section Hero -->
+<section class="py-12 bg-red-700 text-white">
+  <div class="container mx-auto px-4">
+      <div class="flex flex-col md:flex-row items-center">
+          <div class="md:w-1/2 mb-8 md:mb-0">
+              <h1 class="text-4xl md:text-5xl font-bold mb-4">Votre santé mérite les meilleurs soins</h1>
+              <p class="text-lg mb-6">Notre institut médical offre des soins de qualité dans 4 spécialités pour toute la famille.</p>
+              <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
+                  <a href="#" class="bg-white text-red-700 font-bold px-6 py-3 rounded-lg hover:bg-red-100 transition text-center">
+                      Prendre rendez-vous
+                  </a>
+                  <a href="#specialites" class="border border-white text-white px-6 py-3 rounded-lg hover:bg-red-800 transition text-center">
+                      Nos spécialités
+                  </a>
+              </div>
+          </div>
+          <div class="md:w-1/2">
+              <img src="/api/placeholder/600/400" alt="Équipe médicale" class="rounded-lg shadow-lg" />
+          </div>
+      </div>
+  </div>
+</section>
